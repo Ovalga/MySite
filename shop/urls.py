@@ -21,3 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('store.urls')),
 ]
+
+# (venv) C:\mysite\shop>python manage.py drf_create_token olga
+# Generated token ba62e59e2a59a5b16b4ef762df37a378a50c98d8 for user olga 

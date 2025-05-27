@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'store',
     'rest_framework',
     'rest_framework.authtoken',  # Для токенов аутентификации
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -135,6 +136,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'store.User'
 
 REST_FRAMEWORK = {
+    'EXCEPTION_HANDLER': 'rest_framework.views.exception_handler',
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication',
     ],
