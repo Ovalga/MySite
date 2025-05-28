@@ -1,7 +1,17 @@
 from django.shortcuts import render
+from django.contrib.auth import get_user_model
 from rest_framework import viewsets, permissions, serializers
 from .models import Product, Cart, CartItem
 from .serializers import ProductSerializer, CartSerializer, CartItemSerializer
+from rest_framework import generics
+from rest_framework.response import Response
+from django.contrib.auth.models import User
+from .serializers import UserRegisterSerializer, ChangePasswordSerializer
+from rest_framework.permissions import IsAuthenticated
+from rest_framework_simplejwt.tokens import RefreshToken
+from rest_framework.views import APIView
+
+User = get_user_model()
 
 class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all()
@@ -13,7 +23,8 @@ class CartViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticated]
 
     def get_queryset(self):
-        return Cart.objects.filter(user=self.request.user)
+        # Оптимизируем запрос, загружая связанные элементы
+        return Cart.objects.filter(user=self.request.user).prefetch_related('items')
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
@@ -59,3 +70,29 @@ class CartItemViewSet(viewsets.ModelViewSet):
         product.save()
         
         serializer.save()
+
+class RegisterView(generics.CreateAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserRegisterSerializer
+    permission_classes = [permissions.AllowAny]  # Разрешить доступ всем
+
+class ChangePasswordView(generics.UpdateAPIView):
+    queryset = User.objects.all()
+    permission_classes = [IsAuthenticated]
+    serializer_class = ChangePasswordSerializer
+
+    def get_object(self):
+        return self.request.user
+
+    def update(self, request, *args, **kwargs):
+        super().update(request, *args, **kwargs)
+        return Response({"message": "Password changed successfully"})
+    
+class LogoutView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        refresh_token = request.data.get('refresh')
+        token = RefreshToken(refresh_token)
+        token.blacklist()  # Добавляем refresh-токен в черный список
+        return Response({"message": "Успешный выход!"})
