@@ -1,0 +1,57 @@
+{% extends 'store/base.html' %}
+
+{% block title %}Товары{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Все товары</h2>
+<div class="row">
+    {% for product in products %}
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p class="card-text">{{ product.description|truncatechars:100 }}</p>
+                <p class="card-text"><strong>Цена: {{ product.price }} руб.</strong></p>
+                <p class="card-text">В наличии: {{ product.stock }} шт.</p>
+            </div>
+            <div class="card-footer">
+                {% if user.is_authenticated %}
+                <button class="btn btn-primary add-to-cart" data-product-id="{{ product.id }}">В корзину</button>
+                {% else %}
+                <a href="{% url 'login' %}" class="btn btn-primary">Войдите, чтобы купить</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', function() {
+        const productId = this.dataset.productId;
+        
+        fetch("{% url 'cart' %}", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': '{{ csrf_token }}'
+            },
+            body: JSON.stringify({
+                product_id: productId,
+                quantity: 1
+            })
+        })
+        .then(response => {
+            if (response.ok) {
+                alert('Товар добавлен в корзину!');
+            } else {
+                alert('Ошибка при добавлении товара');
+            }
+        });
+    });
+});
+</script>
+{% endblock %}

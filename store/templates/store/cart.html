@@ -1,0 +1,74 @@
+{% extends 'store/base.html' %}
+{% load static %}
+{% load custom_filters %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Ваша корзина</h2>
+    
+    {% if cart and cart.items %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Товар</th>
+                <th>Цена</th>
+                <th>Количество</th>
+                <th>Сумма</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in cart.items %}
+            <tr>
+                <td>{{ item.product.name|default:"Неизвестный товар" }}</td>
+                <td>{{ item.product.price }} руб.</td>
+                <td>{{ item.quantity }}</td>
+                <td>{{ item.total_price|default:0 }} руб.</td>
+                <td>
+                    <button class="btn btn-danger btn-sm remove-item" data-item-id="{{ item.id }}">
+                        Удалить
+                    </button>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"><strong>Итого:</strong></td>
+                <td><strong>{{ cart.total_price }} руб.</strong></td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+    {% else %}
+    <div class="alert alert-info">
+        Ваша корзина пуста
+    </div>
+    {% endif %}
+</div>
+
+<script>
+document.querySelectorAll('.remove-item').forEach(button => {
+    button.addEventListener('click', function() {
+        const itemId = this.dataset.itemId;
+        
+        fetch('/cart/', {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': '{{ csrf_token }}'
+            },
+            body: JSON.stringify({ item_id: itemId })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === 'success') {
+                location.reload();
+            } else {
+                alert('Ошибка при удалении товара');
+            }
+        });
+    });
+});
+</script>
+{% endblock %}

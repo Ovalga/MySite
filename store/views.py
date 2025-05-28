@@ -1,98 +1,262 @@
-from django.shortcuts import render
-from django.contrib.auth import get_user_model
-from rest_framework import viewsets, permissions, serializers
-from .models import Product, Cart, CartItem
-from .serializers import ProductSerializer, CartSerializer, CartItemSerializer
-from rest_framework import generics
-from rest_framework.response import Response
-from django.contrib.auth.models import User
-from .serializers import UserRegisterSerializer, ChangePasswordSerializer
-from rest_framework.permissions import IsAuthenticated
-from rest_framework_simplejwt.tokens import RefreshToken
-from rest_framework.views import APIView
+from django.shortcuts import render, redirect
+from django.contrib.auth import login, logout, authenticate
+from django.contrib.auth.decorators import login_required
+from django.views import View
+from django.http import JsonResponse
+import requests
+import json
+from django.conf import settings
+from rest_framework import status
+from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+import logging
+logger = logging.getLogger(__name__)
 
-User = get_user_model()
+# Настройки API
+API_BASE_URL = settings.API_BASE_URL
 
-class ProductViewSet(viewsets.ModelViewSet):
-    queryset = Product.objects.all()
-    serializer_class = ProductSerializer
+def index(request):
+    return render(request, 'store/index.html')
 
 
-class CartViewSet(viewsets.ModelViewSet):
-    serializer_class = CartSerializer
-    permission_classes = [permissions.IsAuthenticated]
 
-    def get_queryset(self):
-        # Оптимизируем запрос, загружая связанные элементы
-        return Cart.objects.filter(user=self.request.user).prefetch_related('items')
-
-    def perform_create(self, serializer):
-        serializer.save(user=self.request.user)
-
-class CartItemViewSet(viewsets.ModelViewSet):
-    serializer_class = CartItemSerializer
-    permission_classes = [permissions.IsAuthenticated]
-
-    def get_queryset(self):
-        # Получаем корзину текущего пользователя
-        cart, _ = Cart.objects.get_or_create(user=self.request.user)
-        return CartItem.objects.filter(cart=cart)
-
-    def perform_create(self, serializer):
-        # Автоматически связываем с корзиной пользователя
-        cart, _ = Cart.objects.get_or_create(user=self.request.user)
-        serializer.save(cart=cart)
+def products(request):
+    # СОЗДАЕМ ПОЛНЫЙ АБСОЛЮТНЫЙ URL
+    full_url = f"{settings.BASE_URL.rstrip('/')}/{API_BASE_URL.lstrip('/')}products/"
+    response = requests.get(full_url)
+    products = response.json() if response.status_code == status.HTTP_200_OK else []
+    return render(request, 'store/products.html', {'products': products})
         
-        # Обновляем остатки
-        product = serializer.validated_data['product']
-        quantity = serializer.validated_data['quantity']
-        if quantity > product.stock:
-            raise serializers.ValidationError(
-                {"detail": "Недостаточно товара на складе"}
-            )
-        product.stock -= quantity
-        product.save()
+class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
+    @classmethod
+    def get_token(cls, user):
+        token = super().get_token(user)
+        # Добавляем пользовательские поля
+        token['username'] = user.username
+        token['email'] = user.email
+        return token
 
-    def perform_destroy(self, instance):
-        # Восстанавливаем остатки при удалении
-        instance.product.stock += instance.quantity
-        instance.product.save()
-        super().perform_destroy(instance)
+class CustomTokenObtainPairView(TokenObtainPairView):
+    serializer_class = CustomTokenObtainPairSerializer
 
-    def perform_update(self, serializer):
-        old_quantity = serializer.instance.quantity
-        new_quantity = serializer.validated_data.get('quantity', old_quantity)
+class CustomTokenRefreshView(TokenRefreshView):
+    # Можно добавить кастомную логику при необходимости
+    pass
+
+@login_required
+def cart(request):
+    if request.method == 'POST':
+        # Добавление товара в корзину
+        data = json.loads(request.body)
+        product_id = data.get('product_id')
+        quantity = data.get('quantity', 1)
         
-        # Корректный расчет разницы
-        delta = new_quantity - old_quantity
-        product = serializer.instance.product
-        product.stock -= delta
-        product.save()
+        headers = {
+            'Authorization': f'Bearer {request.session["access_token"]}',
+            'Content-Type': 'application/json'
+        }
         
-        serializer.save()
+        
+        # Получаем ID корзины пользователя (АБСОЛЮТНЫЙ URL)
+        cart_url = f"{settings.BASE_URL.rstrip('/')}/{API_BASE_URL.lstrip('/')}carts/"
+        cart_response = requests.get(cart_url, headers=headers)
+        cart_id = cart_response.json()[0]['id'] if cart_response.json() else None
 
-class RegisterView(generics.CreateAPIView):
-    queryset = User.objects.all()
-    serializer_class = UserRegisterSerializer
-    permission_classes = [permissions.AllowAny]  # Разрешить доступ всем
 
-class ChangePasswordView(generics.UpdateAPIView):
-    queryset = User.objects.all()
-    permission_classes = [IsAuthenticated]
-    serializer_class = ChangePasswordSerializer
-
-    def get_object(self):
-        return self.request.user
-
-    def update(self, request, *args, **kwargs):
-        super().update(request, *args, **kwargs)
-        return Response({"message": "Password changed successfully"})
+        # Создаем элемент корзины (АБСОЛЮТНЫЙ URL)
+        item_url = f"{settings.BASE_URL.rstrip('/')}/{API_BASE_URL.lstrip('/')}cart-items/"
+        item_data = {
+            'cart': cart_id,
+            'product': product_id,
+            'quantity': quantity
+        }
+        
     
-class LogoutView(APIView):
-    permission_classes = [IsAuthenticated]
+        response = requests.post(item_url, json=item_data, headers=headers)
+        return JsonResponse({'status': 'success' if response.status_code == 201 else 'error'})
 
+    elif request.method == 'DELETE':
+        # Удаление товара из корзины
+        data = json.loads(request.body)
+        item_id = data.get('item_id')
+        
+        headers = {
+            'Authorization': f'Bearer {request.session["access_token"]}',
+            'Content-Type': 'application/json'
+        }
+        
+        # response = requests.delete(f"{API_BASE_URL}cart-items/{item_id}/", headers=headers)
+        # return JsonResponse({'status': 'success' if response.status_code == 204 else 'error'})
+    
+        # АБСОЛЮТНЫЙ URL
+        item_url = f"{settings.BASE_URL.rstrip('/')}/{API_BASE_URL.lstrip('/')}cart-items/{item_id}/"
+        response = requests.delete(item_url, headers=headers)
+        return JsonResponse({'status': 'success' if response.status_code == 204 else 'error'})
+
+    else:
+        #GET запрос - отображение корзины
+        access_token = request.session.get('access_token', '')
+        
+        # Если токен отсутствует, перенаправляем на вход
+        if not access_token:
+            return redirect('login')
+        
+        headers = {
+            'Authorization': f'Bearer {access_token}',
+            'Content-Type': 'application/json'
+        }
+        
+        cart_url = f"{settings.BASE_URL.rstrip('/')}/{API_BASE_URL.lstrip('/')}carts/"
+        
+        try:
+            response = requests.get(cart_url, headers=headers)
+            
+            # Если получили 401 - токен устарел, пробуем обновить
+            if response.status_code == 401:
+                refresh_token = request.session.get('refresh_token', '')
+                if refresh_token:
+                    new_tokens = refresh_jwt_token(refresh_token)
+                    if new_tokens:
+                        request.session['access_token'] = new_tokens['access']
+                        request.session['refresh_token'] = new_tokens['refresh']
+                        headers['Authorization'] = f'Bearer {new_tokens["access"]}'
+                        response = requests.get(cart_url, headers=headers)
+            
+            if response.status_code == 200:
+                cart_data = response.json()
+                if cart_data:
+                    cart = cart_data[0]
+                    
+                    # Вычисляем сумму для каждого элемента
+                    for item in cart['items']:
+                        try:
+                            price = float(item['product']['price'])
+                            quantity = int(item['quantity'])
+                            item['total_price'] = price * quantity
+                        except (TypeError, ValueError, KeyError):
+                            item['total_price'] = 0
+                else:
+                    cart = None
+            else:
+                cart = None
+        except Exception as e:
+            print(f"Error fetching cart: {e}")
+            cart = None
+        
+        return render(request, 'store/cart.html', {'cart': cart})
+
+# функция для обновления токена
+def refresh_jwt_token(refresh_token):
+    refresh_url = f"{settings.BASE_URL.rstrip('/')}/{API_BASE_URL.lstrip('/')}auth/refresh/"
+    data = {"refresh": refresh_token}
+    
+    try:
+        response = requests.post(refresh_url, json=data)
+        if response.status_code == 200:
+            return response.json()
+    except Exception as e:
+        print(f"Error refreshing token: {e}")
+    return None
+
+@login_required
+def profile(request):
+    return render(request, 'store/profile.html', {'user': request.user})
+
+class RegisterView(View):
+    template_name = 'store/register.html'
+    
+    def get(self, request):
+        return render(request, self.template_name)
+    
     def post(self, request):
-        refresh_token = request.data.get('refresh')
-        token = RefreshToken(refresh_token)
-        token.blacklist()  # Добавляем refresh-токен в черный список
-        return Response({"message": "Успешный выход!"})
+        data = {
+            'username': request.POST.get('username'),
+            'password': request.POST.get('password'),
+            'email': request.POST.get('email')
+        }
+        try:
+            response = requests.post(f"{settings.BASE_URL}{API_BASE_URL}auth/register/", json=data)
+        
+            if response.status_code == 201:
+                # Аутентификация в Django
+                user = authenticate(
+                    username=data['username'],
+                    password=data['password']
+                )
+                if user:
+                    login(request, user)  # Сохраняем сессию Django
+                
+                # Получаем JWT токены
+                login_data = {
+                    'username': data['username'],
+                    'password': data['password']
+                }
+                login_response = requests.post(f"{API_BASE_URL}auth/login/", json=login_data)
+                
+                if login_response.status_code == status.HTTP_200_OK:
+                    tokens = login_response.json()
+                    request.session['access_token'] = tokens['access']
+                    request.session['refresh_token'] = tokens['refresh']
+                    return redirect('index')
+        except Exception as e:
+            error = f"Connection error: {str(e)}"
+            return render(request, self.template_name, {'error': error})
+            
+class LoginView(View):
+    template_name = 'store/login.html'
+    
+    def get(self, request):
+        return render(request, self.template_name)
+    
+    def post(self, request):
+        data = {
+            'username': request.POST.get('username'),
+            'password': request.POST.get('password')
+        }
+        
+
+        # ИСПРАВЛЕННЫЙ URL - АБСОЛЮТНЫЙ
+        login_url = f"{settings.BASE_URL.rstrip('/')}/{API_BASE_URL.lstrip('/')}auth/login/"
+        
+        
+        response = requests.post(login_url, json=data)
+        if response.status_code == status.HTTP_200_OK:
+            tokens = response.json()
+            request.session['access_token'] = tokens['access']
+            request.session['refresh_token'] = tokens['refresh']
+                
+            # Аутентификация в Django
+            user = authenticate(
+                username=data['username'],
+                password=data['password']
+            )
+            if user:
+                login(request, user)
+            return redirect('index')
+            
+        error = response.json().get('detail', 'Неверные учетные данные')
+        return render(request, self.template_name, {'error': error})
+
+def logout_view(request):
+    try:
+    # Выход из API
+        if 'access_token' in request.session:
+                headers = {
+                    'Authorization': f'Bearer {request.session["access_token"]}',
+                    'Content-Type': 'application/json'
+                }
+                data = {'refresh': request.session.get('refresh_token', '')}
+                requests.post(f"{settings.BASE_URL}{API_BASE_URL}auth/logout/", json=data, headers=headers)
+    except Exception as e:
+        print(f"Logout error: {e}")
+        
+        # Очистка сессии
+        if 'access_token' in request.session:
+            del request.session['access_token']
+        if 'refresh_token' in request.session:
+            del request.session['refresh_token']
+        
+        # Выход из Django
+        logout(request)
+        return redirect('index')
+
