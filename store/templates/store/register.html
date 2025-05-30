@@ -1,0 +1,95 @@
+{% extends 'store/base.html' %}
+{% load static %}
+
+{% block title %}Регистрация{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="text-center">Создать новый аккаунт</h3>
+                </div>
+                <div class="card-body">
+                    {% if error %}
+                        <div class="alert alert-danger">
+                            {{ error }}
+                        </div>
+                    {% endif %}
+                    
+                    <form method="post" action="{% url 'register' %}">
+                        {% csrf_token %}
+                        
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Имя пользователя</label>
+                            <input type="text" class="form-control" id="username" name="username" 
+                                   placeholder="Придумайте уникальное имя" required>
+                            <div class="form-text">От 3 до 30 символов. Только буквы, цифры и @/./+/-/_</div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email адрес</label>
+                            <input type="email" class="form-control" id="email" name="email" 
+                                   placeholder="example@domain.com" required>
+                            <div class="form-text">Мы никогда не передадим вашу почту третьим лицам</div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Пароль</label>
+                            <input type="password" class="form-control" id="password" name="password" 
+                                   placeholder="Не менее 8 символов" required>
+                            <div class="form-text">Используйте буквы, цифры и специальные символы</div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="password2" class="form-label">Подтверждение пароля</label>
+                            <input type="password" class="form-control" id="password2" name="password2" 
+                                   placeholder="Повторите пароль" required>
+                        </div>
+                        
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg">Зарегистрироваться</button>
+                        </div>
+                    </form>
+                    
+                    <hr class="my-4">
+                    
+                    <div class="text-center">
+                        <p class="mb-1">Уже есть аккаунт?</p>
+                        <a href="{% url 'login' %}" class="btn btn-outline-secondary">Войти в систему</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-4 text-center">
+                <p class="text-muted">
+                    Нажимая "Зарегистрироваться", вы соглашаетесь с нашими 
+                    <a href="#">Условиями использования</a> и <a href="#">Политикой конфиденциальности</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('form');
+    const password = document.getElementById('password');
+    const password2 = document.getElementById('password2');
+    
+    form.addEventListener('submit', function(e) {
+        // Простая проверка совпадения паролей
+        if (password.value !== password2.value) {
+            e.preventDefault();
+            alert('Пароли не совпадают!');
+            password2.focus();
+        }
+        
+        // Дополнительные проверки можно добавить здесь
+    });
+});
+</script>
+{% endblock %}

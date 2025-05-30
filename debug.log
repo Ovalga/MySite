@@ -928,3 +928,177 @@ Watching for file changes with StatReloader
 "GET /login/ HTTP/1.1" 200 697
 "GET / HTTP/1.1" 200 2049
 "GET /register/ HTTP/1.1" 200 0
+Watching for file changes with StatReloader
+"GET /register/ HTTP/1.1" 200 6105
+"POST /api/auth/register/ HTTP/1.1" 201 96
+"POST /register/ HTTP/1.1" 200 6720
+"GET /api/products/ HTTP/1.1" 200 361
+"GET /products/ HTTP/1.1" 200 5421
+"GET /profile/ HTTP/1.1" 200 0
+Watching for file changes with StatReloader
+Internal Server Error: /profile/
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\shop\store\views.py", line 276, in profile
+    return render(request, 'store/profile.html', {'user': request.user})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'change-password' not found. 'change-password' is not a valid view function or pattern name.
+"GET /profile/ HTTP/1.1" 500 163896
+C:\mysite\shop\store\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /profile/ HTTP/1.1" 200 8105
+"GET /static/store/images/profile-avatar.jpg HTTP/1.1" 404 2020
+Unauthorized: /change-password/
+"GET /change-password/ HTTP/1.1" 401 3785
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+"GET /profile/ HTTP/1.1" 200 7906
+"GET /static/store/images/profile-avatar.jpg HTTP/1.1" 404 2020
+"GET /api/products/ HTTP/1.1" 200 361
+"GET /products/ HTTP/1.1" 200 5421
+"GET /cart/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 697
+"POST /api/auth/login/ HTTP/1.1" 200 483
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 2403
+"GET /api/products/ HTTP/1.1" 200 361
+"GET /products/ HTTP/1.1" 200 5421
+"GET /api/carts/ HTTP/1.1" 200 2
+"GET /cart/ HTTP/1.1" 200 3016
+"GET /api/products/ HTTP/1.1" 200 361
+"GET /products/ HTTP/1.1" 200 5421
+"GET /api/carts/ HTTP/1.1" 200 2
+"POST /api/cart-items/ HTTP/1.1" 201 34
+"POST /cart/ HTTP/1.1" 200 21
+"GET /api/carts/ HTTP/1.1" 200 85
+"GET /cart/ HTTP/1.1" 200 3879
+"DELETE /api/cart-items/12/ HTTP/1.1" 204 0
+"DELETE /cart/ HTTP/1.1" 200 21
+"GET /api/carts/ HTTP/1.1" 200 46
+"GET /cart/ HTTP/1.1" 200 3016
+"GET /profile/ HTTP/1.1" 200 7906
+"GET /static/store/images/profile-avatar.jpg HTTP/1.1" 404 2020
+"POST /api/auth/logout/ HTTP/1.1" 205 31
+"POST /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 2388
+"GET /login/ HTTP/1.1" 200 697
+"POST /api/auth/login/ HTTP/1.1" 200 483
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 2403
+"GET /profile/ HTTP/1.1" 200 7906
+"GET /static/store/images/profile-avatar.jpg HTTP/1.1" 404 2020
+"GET /api/carts/ HTTP/1.1" 200 46
+"GET /cart/ HTTP/1.1" 200 3016
+"GET /api/products/ HTTP/1.1" 200 361
+"GET /products/ HTTP/1.1" 200 5421
+"GET /api/carts/ HTTP/1.1" 200 46
+"POST /api/cart-items/ HTTP/1.1" 201 34
+"POST /cart/ HTTP/1.1" 200 21
+"GET /api/carts/ HTTP/1.1" 200 85
+"POST /api/cart-items/ HTTP/1.1" 201 34
+"POST /cart/ HTTP/1.1" 200 21
+"GET /api/carts/ HTTP/1.1" 200 120
+"GET /cart/ HTTP/1.1" 200 4283
+"GET /profile/ HTTP/1.1" 200 7906
+"GET /static/store/images/profile-avatar.jpg HTTP/1.1" 404 2020
+"GET /api/products/ HTTP/1.1" 200 361
+"GET /products/ HTTP/1.1" 200 5421
+"POST /api/auth/logout/ HTTP/1.1" 205 31
+"POST /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 2388
+"GET /register/ HTTP/1.1" 200 6105
+Bad Request: /api/auth/register/
+"POST /api/auth/register/ HTTP/1.1" 400 42
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view store.views.view didn't return an HttpResponse object. It returned None instead.
+"POST /register/ HTTP/1.1" 500 75656
+"POST /api/auth/register/ HTTP/1.1" 201 107
+"POST /register/ HTTP/1.1" 200 6720
+"GET /cart/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 697
+"POST /api/auth/login/ HTTP/1.1" 200 483
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 2403
+"GET /api/products/ HTTP/1.1" 200 361
+"GET /products/ HTTP/1.1" 200 5421
+"GET /api/carts/ HTTP/1.1" 200 2
+"GET /cart/ HTTP/1.1" 200 3016
+"GET /api/products/ HTTP/1.1" 200 361
+"GET /products/ HTTP/1.1" 200 5421
