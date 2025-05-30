@@ -816,3 +816,115 @@ Watching for file changes with StatReloader
 "GET /api/carts/ HTTP/1.1" 200 221
 "GET /cart/ HTTP/1.1" 200 4903
 "GET /profile/ HTTP/1.1" 200 0
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 1815
+"POST /api/auth/logout/ HTTP/1.1" 205 31
+Internal Server Error: /logout/
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view store.views.logout_view didn't return an HttpResponse object. It returned None instead.
+"GET /logout/ HTTP/1.1" 500 74207
+Watching for file changes with StatReloader
+"GET /api/carts/ HTTP/1.1" 200 221
+"POST /api/auth/login/ HTTP/1.1" 200 483
+"POST /api/auth/register/ HTTP/1.1" 201 102
+"POST /api/auth/login/ HTTP/1.1" 200 483
+"POST /api/cart-items/ HTTP/1.1" 201 34
+"GET / HTTP/1.1" 200 1815
+Bad Request: /api/auth/logout/
+"POST /api/auth/logout/ HTTP/1.1" 400 32
+Internal Server Error: /logout/
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view store.views.logout_view didn't return an HttpResponse object. It returned None instead.
+"GET /logout/ HTTP/1.1" 500 74207
+"GET /api/carts/ HTTP/1.1" 200 256
+"GET /cart/ HTTP/1.1" 200 5307
+"DELETE /api/cart-items/4/ HTTP/1.1" 204 0
+"DELETE /cart/ HTTP/1.1" 200 21
+"GET /api/carts/ HTTP/1.1" 200 222
+"GET /cart/ HTTP/1.1" 200 4904
+"GET /api/products/ HTTP/1.1" 200 361
+"GET /products/ HTTP/1.1" 200 4833
+"GET /api/products/ HTTP/1.1" 200 361
+"GET /products/ HTTP/1.1" 200 4833
+Watching for file changes with StatReloader
+Forbidden (CSRF cookie not set.): /logout/
+"POST /logout/ HTTP/1.1" 403 2855
+Watching for file changes with StatReloader
+Forbidden (CSRF cookie not set.): /logout/
+"POST /logout/ HTTP/1.1" 403 2855
+"POST /api/auth/login/ HTTP/1.1" 200 483
+Forbidden (CSRF cookie not set.): /logout/
+"POST /logout/ HTTP/1.1" 403 2855
+C:\mysite\shop\store\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\mysite\shop\store\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Forbidden (CSRF cookie not set.): /logout/
+"POST /logout/ HTTP/1.1" 403 2855
+C:\mysite\shop\shop\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\mysite\shop\shop\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\mysite\shop\shop\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Forbidden (CSRF cookie not set.): /logout/
+"POST /logout/ HTTP/1.1" 403 2855
+Watching for file changes with StatReloader
+Forbidden (CSRF cookie not set.): /logout/
+"POST /logout/ HTTP/1.1" 403 2855
+C:\mysite\shop\store\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Forbidden (CSRF cookie not set.): /logout/
+"POST /logout/ HTTP/1.1" 403 2855
+Watching for file changes with StatReloader
+"POST /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 2388
+"GET / HTTP/1.1" 200 2403
+"GET /api/products/ HTTP/1.1" 200 361
+"GET /products/ HTTP/1.1" 200 5421
+Bad Request: /api/auth/logout/
+"POST /api/auth/logout/ HTTP/1.1" 400 32
+"POST /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 2388
+"GET /login/ HTTP/1.1" 200 697
+"POST /api/auth/login/ HTTP/1.1" 200 483
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 2403
+"GET /api/products/ HTTP/1.1" 200 361
+"GET /products/ HTTP/1.1" 200 5421
+"GET /api/carts/ HTTP/1.1" 200 222
+"GET /cart/ HTTP/1.1" 200 5492
+Watching for file changes with StatReloader
+"POST /api/auth/logout/ HTTP/1.1" 205 31
+"POST /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 2388
+"GET /login/ HTTP/1.1" 200 697
+"POST /api/auth/login/ HTTP/1.1" 200 483
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 2403
+"GET /api/carts/ HTTP/1.1" 200 84
+"GET /cart/ HTTP/1.1" 200 3878
+"GET /api/products/ HTTP/1.1" 200 361
+"GET /products/ HTTP/1.1" 200 5421
+"POST /api/auth/logout/ HTTP/1.1" 205 31
+"POST /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 2388
+"GET /login/ HTTP/1.1" 200 697
+"GET / HTTP/1.1" 200 2049
+"GET /register/ HTTP/1.1" 200 0

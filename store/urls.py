@@ -10,16 +10,16 @@ from .api_views import (  # Выносим API-представления в о�
     LogoutAPIView,
 )
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
-from .views import (
-    index, 
-    products, 
-    cart, 
-    profile,
-    RegisterView,
-    LoginView,
-    logout_view,
-    CustomTokenObtainPairView  # ДОБАВЛЕНО
-)
+# from .views import (
+#     index, 
+#     products, 
+#     cart, 
+#     profile,
+#     RegisterView,
+#     LoginView,
+#     logout_view,
+#     CustomTokenObtainPairView  # ДОБАВЛЕНО
+# )
 
 router = DefaultRouter()
 router.register(r'products', ProductViewSet)

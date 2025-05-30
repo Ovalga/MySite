@@ -10,6 +10,9 @@ from rest_framework import status
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 import logging
+from django.views.decorators.http import require_POST
+from django.views.decorators.csrf import csrf_exempt
+from django.contrib import messages
 logger = logging.getLogger(__name__)
 
 # Настройки API
@@ -237,26 +240,109 @@ class LoginView(View):
         error = response.json().get('detail', 'Неверные учетные данные')
         return render(request, self.template_name, {'error': error})
 
+@csrf_exempt
+@require_POST
 def logout_view(request):
-    try:
     # Выход из API
-        if 'access_token' in request.session:
-                headers = {
-                    'Authorization': f'Bearer {request.session["access_token"]}',
-                    'Content-Type': 'application/json'
-                }
-                data = {'refresh': request.session.get('refresh_token', '')}
-                requests.post(f"{settings.BASE_URL}{API_BASE_URL}auth/logout/", json=data, headers=headers)
-    except Exception as e:
-        print(f"Logout error: {e}")
-        
-        # Очистка сессии
-        if 'access_token' in request.session:
-            del request.session['access_token']
-        if 'refresh_token' in request.session:
-            del request.session['refresh_token']
-        
-        # Выход из Django
-        logout(request)
-        return redirect('index')
+    if request.session.get('access_token'):
+        try:
+            headers = {
+                'Authorization': f'Bearer {request.session["access_token"]}',
+                'Content-Type': 'application/json'
+            }
+            data = {'refresh': request.session.get('refresh_token', '')}
+            logout_url = f"{settings.BASE_URL.rstrip('/')}/api/auth/logout/"
+            response = requests.post(logout_url, json=data, headers=headers)
+            
+            # Логируем результат выхода из API
+            print(f"API logout status: {response.status_code}")
+        except Exception as e:
+            print(f"API logout error: {str(e)}")
+    
+    # Выход из Django
+    logout(request)
+    
+    # Очистка сессии
+    request.session.flush()
+    
+    # Добавляем сообщение об успешном выходе
+    messages.success(request, "Вы успешно вышли из системы")
+    
+    return redirect('index')
 
+# def logout_view(request):
+#     try:
+#     # Выход из API
+#         if 'access_token' in request.session:
+#                 headers = {
+#                     'Authorization': f'Bearer {request.session["access_token"]}',
+#                     'Content-Type': 'application/json'
+#                 }
+#                 data = {'refresh': request.session.get('refresh_token', '')}
+#                 requests.post(f"{settings.BASE_URL}{API_BASE_URL}auth/logout/", json=data, headers=headers)
+#     except Exception as e:
+#         print(f"Logout error: {e}")
+        
+#         # Очистка сессии
+#         if 'access_token' in request.session:
+#             del request.session['access_token']
+#         if 'refresh_token' in request.session:
+#             del request.session['refresh_token']
+        
+#         # Выход из Django
+#         logout(request)
+#         return redirect('index')
+
+# @require_POST
+# @csrf_protect
+# def logout_view(request):
+#     # Сохраняем сообщение перед выходом
+#     from django.contrib import messages
+#     success_message = "Вы успешно вышли из системы"
+    
+#     try:
+#         # Выход из API
+#         if 'access_token' in request.session:
+#             headers = {
+#                 'Authorization': f'Bearer {request.session["access_token"]}',
+#                 'Content-Type': 'application/json'
+#             }
+#             data = {'refresh': request.session.get('refresh_token', '')}
+#             logout_url = f"{settings.BASE_URL.rstrip('/')}/{API_BASE_URL.lstrip('/')}auth/logout/"
+#             response = requests.post(logout_url, json=data, headers=headers)
+            
+#             # Проверяем успешность выхода
+#             if response.status_code not in [200, 204]:
+#                 logger.warning(f"Logout API error: {response.status_code}, {response.text}")
+#     except Exception as e:
+#         logger.error(f"Logout error: {str(e)}")
+    
+#     # Очистка сессии
+#     if 'access_token' in request.session:
+#         del request.session['access_token']
+#     if 'refresh_token' in request.session:
+#         del request.session['refresh_token']
+    
+#     # Выход из Django
+#     logout(request)
+    
+#     # Добавляем сообщение об успешном выходе
+#     messages.success(request, success_message)
+    
+#     return redirect('index')
+
+# class LogoutAPIView(APIView):
+#     # Убираем проверку аутентификации, так как нам нужен только refresh токен
+#     permission_classes = [permissions.AllowAny]
+
+#     def post(self, request):
+#         try:
+#             refresh_token = request.data.get("refresh")
+#             if not refresh_token:
+#                 return Response({"error": "Refresh token is required"}, status=status.HTTP_400_BAD_REQUEST)
+            
+#             token = RefreshToken(refresh_token)
+#             token.blacklist()
+#             return Response({"message": "Logout successful"}, status=status.HTTP_205_RESET_CONTENT)
+#         except Exception as e:
+#             return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
