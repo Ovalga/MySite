@@ -7,12 +7,13 @@ from django.contrib.auth import get_user_model
 User = get_user_model()
 
 class UserRegisterSerializer(serializers.ModelSerializer):
-    password = serializers.CharField(write_only=True)
-
+    password = serializers.CharField(write_only=True) #говорит о том, что пароль не возвращается в API
+# преобразует данные регистрации в объект User
     class Meta:
         model = User
         fields = ('id', 'username', 'password', 'email')
 
+#переопределяем метод криэйт, используем криэйт юзер обеспечивая хеширование паролей и правильно обрабатывает пустые имейлы
     def create(self, validated_data):
         user = User.objects.create_user(
             username=validated_data['username'],
@@ -20,7 +21,10 @@ class UserRegisterSerializer(serializers.ModelSerializer):
             password=validated_data['password']
         )
         return user
-
+    
+#наследует от сериалайзер
+#валидирует данные при смене пароля
+#проверяет начличие старого пароля, потом проверяет пароль с помощью встроенного валидатора джанго
 class ChangePasswordSerializer(serializers.Serializer):
     old_password = serializers.CharField(required=True)
     new_password = serializers.CharField(
@@ -28,11 +32,14 @@ class ChangePasswordSerializer(serializers.Serializer):
         validators=[validate_password]
     )
 
+#преобразует объекты в джейсон и обратно, определяет какие поля доступны в апи
+
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
         fields = ['id', 'name', 'price', 'description', 'stock']
         
+#работает с элементами корзины
 class CartItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = CartItem
@@ -43,6 +50,7 @@ class CartItemSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError("Количество не может быть меньше 1")
         return value
 
+#список элементов корзины через CartItemSerializer
 class CartSerializer(serializers.ModelSerializer):
     items = CartItemSerializer(many=True, read_only=True)
     total_price = serializers.SerializerMethodField()

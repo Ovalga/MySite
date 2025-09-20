@@ -26,9 +26,12 @@ def index(request):
 def products(request):
     # СОЗДАЕМ ПОЛНЫЙ АБСОЛЮТНЫЙ URL
     full_url = f"{settings.BASE_URL.rstrip('/')}/{API_BASE_URL.lstrip('/')}products/"
-    response = requests.get(full_url)
-    products = response.json() if response.status_code == status.HTTP_200_OK else []
+    response = requests.get(full_url) #делаем гет запрос к апи
+    products = response.json() if response.status_code == status.HTTP_200_OK else [] #если ответ успешный преобразуем джейсон в объекты
     return render(request, 'store/products.html', {'products': products})
+
+#JWT аутентификация
+#кастомный сериализатор токенов. Наследует стандартный сериализатор, добавляет в токен доболнительные поля
         
 class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
     @classmethod
@@ -42,14 +45,15 @@ class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
 class CustomTokenObtainPairView(TokenObtainPairView):
     serializer_class = CustomTokenObtainPairSerializer
 
+#оставлен без изменений
 class CustomTokenRefreshView(TokenRefreshView):
     # Можно добавить кастомную логику при необходимости
     pass
 
-@login_required
+@login_required #требует аутентификации
 def cart(request):
     if request.method == 'POST':
-        # Добавление товара в корзину
+        # Добавление товара в корзину через API
         data = json.loads(request.body)
         product_id = data.get('product_id')
         quantity = data.get('quantity', 1)
@@ -97,7 +101,7 @@ def cart(request):
         return JsonResponse({'status': 'success' if response.status_code == 204 else 'error'})
 
     else:
-        #GET запрос - отображение корзины
+        #GET запрос - отображение корзины, ее содержимое
         access_token = request.session.get('access_token', '')
         
         # Если токен отсутствует, перенаправляем на вход
@@ -168,6 +172,7 @@ def profile(request):
 class RegisterView(View):
     template_name = 'store/register.html'
     
+    #отображает форму регистрации
     def get(self, request):
         return render(request, self.template_name)
     
@@ -195,7 +200,7 @@ class RegisterView(View):
                     'password': data['password']
                 }
                 login_response = requests.post(f"{API_BASE_URL}auth/login/", json=login_data)
-                
+                #сохраняем токены в сессии
                 if login_response.status_code == status.HTTP_200_OK:
                     tokens = login_response.json()
                     request.session['access_token'] = tokens['access']
@@ -208,6 +213,7 @@ class RegisterView(View):
 class LoginView(View):
     template_name = 'store/login.html'
     
+    #отображает форму входа
     def get(self, request):
         return render(request, self.template_name)
     

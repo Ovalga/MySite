@@ -1,0 +1,349 @@
+# services:
+#   db:
+#     image: postgres:latest
+#     environment:
+#       POSTGRES_DB: shop_db
+#       POSTGRES_USER: shop_user
+#       POSTGRES_PASSWORD: shop_password
+#     ports:
+#       - "5433:5432"
+#     volumes:
+#       - postgres_data:/var/lib/postgresql/data/
+
+
+# # Сервис Django приложения
+#   backend:
+#     build: .
+#     command: >
+#       sh -c "python manage.py migrate &&
+#              python manage.py createsuperuser --noinput || true &&
+#              gunicorn shop.wsgi:application --bind 0.0.0.0:8000"
+#     environment:
+#       DB_HOST: db
+#       DB_NAME: ${POSTGRES_DB:-shop_db}
+#       DB_USER: ${POSTGRES_USER:-shop_user}
+#       DB_PASSWORD: ${POSTGRES_PASSWORD:-shop_password}
+#       SECRET_KEY: ${SECRET_KEY:-django-insecure-secret-key}
+#       DEBUG: ${DEBUG:-0}
+#     volumes:
+#       - .:/app
+#     ports:
+#       - "8000:8000"
+#     depends_on:
+#       - db
+
+#   # Сервис фронтенда (если используется)
+#   frontend:
+#     build: ./store/templates
+#     ports:
+#       - "3000:80"
+#     depends_on:
+#       - backend
+
+# # Том для постоянного хранения данных БД
+# volumes:
+#   postgres_data:
+
+# # У нас он выглядит так:
+
+# services:
+  
+#     db:
+#     image: postgres:latest
+#     environment:
+#       POSTGRES_DB: shop_db
+#       POSTGRES_USER: shop_user
+#       POSTGRES_PASSWORD: shop_password
+#     ports:
+#       - "5433:5432"
+#     volumes:
+#       - postgres_data:/var/lib/postgresql/data/
+
+# backend:
+#   build:
+#     context: ./backend
+#   container_name: django_app
+#   restart: unless-stopped
+#   command: >
+#     sh -c "
+#       echo 'Waiting for database...' &&
+#       sleep 15 &&
+#       python manage.py makemigrations &&
+#       python manage.py migrate &&
+#       python manage.py collectstatic --noinput &&
+#       python manage.py runserver 0.0.0.0:8000
+#     "
+#   volumes:
+#     - ./backend:/app
+#     - static_volume:/app/staticfiles
+#     - media_volume:/app/media
+#     - ./frontend/templates:/frontend/templates
+#     - ./frontend/static/admin:/frontend/static/admin
+#   ports:
+#     - "8000:8000"
+#   env_file:
+#     - ./backend/.env
+#   environment:
+#     - DB_HOST=db
+#     - DB_PORT=5433
+#   depends_on:
+#     db:
+#       condition: service_healthy
+#   networks:
+#     - app_network
+
+# frontend:
+#   build:
+#     context: ./frontend
+#   container_name: frontend_app
+#   restart: unless-stopped
+#   ports:
+#     - "80:80"
+#   depends_on:
+#     - backend
+#   networks:
+#     - app_network
+#   volumes:
+#     - static_volume:/app/staticfiles
+#     - media_volume:/app/media
+
+# pgadmin:
+#   image: dpage/pgadmin4:latest
+#   container_name: pgadmin
+#   restart: unless-stopped
+#   environment:
+#     PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL:-admin@example.com}
+#     PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD:-changeme}
+#     PGADMIN_CONFIG_SERVER_MODE: "False"
+#   ports:
+#     - "5050:80"
+#   volumes:
+#     - pgadmin_data:/var/lib/pgadmin
+#   depends_on:
+#     db:
+#       condition: service_healthy
+#   networks:
+#     - app_network
+
+# volumes:
+#   postgres_data:
+#   static_volume:
+#   media_volume:
+#   pgadmin_data:
+
+# networks:
+#   app_network:
+#     driver: bridge
+
+    # backend:
+    # build:
+    #   context: ./backend
+    # container_name: django_app
+    # restart: unless-stopped
+    # command: >
+    #   sh -c "
+    #     echo 'Waiting for database...' &&
+    #     sleep 15 &&
+    #     python manage.py makemigrations &&
+    #     python manage.py migrate &&
+    #     python manage.py collectstatic --noinput &&
+    #     python manage.py runserver 0.0.0.0:8000
+    #   "
+    # volumes:
+    #   - ./backend:/app
+    #   - static_volume:/app/staticfiles
+    #   - media_volume:/app/media
+    #   - ./frontend/templates:/frontend/templates
+    #   - ./frontend/static/admin:/frontend/static/admin
+    # ports:
+    #   - "8000:8000"
+    # env_file:
+    #   - ./backend/.env
+    # environment:
+    #   - DB_HOST=db
+    #   - DB_PORT=5432
+    # depends_on:
+    #   db:
+    #     condition: service_healthy
+    # networks:
+    #   - app_network
+
+    # frontend:
+    # build:
+    #   context: ./frontend
+    # container_name: frontend_app
+    # restart: unless-stopped
+    # ports:
+    #   - "80:80"
+    # depends_on:
+    #   - backend
+    # networks:
+    #   - app_network
+    # volumes:
+    #   - static_volume:/app/staticfiles
+    #   - media_volume:/app/media
+#   pgadmin:
+#     image: dpage/pgadmin4:latest
+#     container_name: pgadmin
+#     restart: unless-stopped
+#     environment:
+#       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL:-admin@example.com}
+#       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD:-changeme}
+#       PGADMIN_CONFIG_SERVER_MODE: "False"
+#     ports:
+#       - "5050:80"
+#     volumes:
+#       - pgadmin_data:/var/lib/pgadmin
+#     depends_on:
+#       db:
+#         condition: service_healthy
+#     networks:
+#       - app_network
+
+# volumes:
+#   postgres_data:
+#   static_volume:
+#   media_volume:
+#   pgadmin_data:
+
+# networks:
+#   app_network:
+#     driver: bridge
+
+
+
+# version: '3.8'
+
+# services:
+#   db:
+#     image: postgres:13
+#     environment:
+#       POSTGRES_DB: shop_db
+#       POSTGRES_USER: shop_user
+#       POSTGRES_PASSWORD: shop_password
+#     volumes:
+#       - postgres_data:/var/lib/postgresql/data/
+#     healthcheck:
+#       test: ["CMD-SHELL", "pg_isready -U shop_user -d shop_db"]
+#       interval: 5s
+#       timeout: 5s
+#       retries: 5
+#     networks:
+#       - app_network
+
+#   backend:
+#     build: 
+#       context: .  # ИЗМЕНЕНО: используем текущую директорию вместо ./backend
+#     container_name: django_app
+#     restart: unless-stopped
+#     command: >
+#       sh -c "
+#         echo 'Waiting for database...' &&
+#         while ! nc -z db 5432; do
+#           sleep 1
+#         done &&
+#         python manage.py migrate &&
+#         python manage.py runserver 0.0.0.0:8000
+#       "
+#     volumes:
+#       - .:/app  # ИЗМЕНЕНО: монтируем текущую директорию
+#     ports:
+#       - "8000:8000"
+#     environment:
+#       - DB_HOST=db
+#       - DB_NAME=shop_db
+#       - DB_USER=shop_user
+#       - DB_PASSWORD=shop_password
+#     depends_on:
+#       db:
+#         condition: service_healthy
+#     networks:
+#       - app_network
+
+# volumes:
+#   postgres_data:
+
+# networks:
+#   app_network:
+#     driver: bridge
+
+# version: '3.8'
+
+# services:
+#   db:
+#     image: postgres:13
+#     environment:
+#       POSTGRES_DB: shop_db
+#       POSTGRES_USER: shop_user
+#       POSTGRES_PASSWORD: shop_password
+#     volumes:
+#       - postgres_data:/var/lib/postgresql/data/
+#     healthcheck:
+#       test: ["CMD-SHELL", "pg_isready -U shop_user -d shop_db"]
+#       interval: 5s
+#       timeout: 5s
+#       retries: 5
+
+#   backend:
+#     build: .
+#     command: >
+#       sh -c "
+#         echo 'Waiting for database...' &&
+#         while ! nc -z db 5432; do
+#           sleep 1
+#         done &&
+#         python manage.py migrate &&
+#         python manage.py runserver 0.0.0.0:8000
+#       "
+#     volumes:
+#       - .:/app
+#     ports:
+#       - "8000:8000"
+#     environment:
+#       - DB_HOST=db
+#       - DB_NAME=shop_db
+#       - DB_USER=shop_user
+#       - DB_PASSWORD=shop_password
+#       - DEBUG=1
+#     depends_on:
+#       db:
+#         condition: service_healthy
+
+# volumes:
+#   postgres_data:
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+      - ./staticfiles:/app/staticfiles
+      - ./media:/app/media
+    environment:
+      - DATABASE_URL=postgres://postgres:password@db:5432/mydb
+      - DEBUG=1
+      - SECRET_KEY=your-secret-key-here-change-in-prod
+    depends_on:
+      - db
+    command: >
+      sh -c "
+        /wait-for-db.sh db 5432 &&
+        python manage.py migrate &&
+        python manage.py runserver 0.0.0.0:8000
+      "
+
+  db:
+    image: postgres:15
+    # volumes:
+    #   - postgres_/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_DB=mydb
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+    ports:
+      - "5432:5432"
+
+volumes:
+  postgres_data:

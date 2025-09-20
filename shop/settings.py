@@ -14,6 +14,10 @@ from pathlib import Path
 from datetime import timedelta
 from django.contrib.messages import constants as messages
 
+import os
+import dj_database_url
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -27,7 +31,7 @@ SECRET_KEY = 'django-insecure-(8^rss3v$#9ji#7p8)4ls47%7fx=#22o*60v4)ll80)rwc7!=3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -40,7 +44,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-  
     'rest_framework',
     'rest_framework.authtoken',  # Для токенов аутентификации
     'django_filters',
@@ -90,17 +93,20 @@ WSGI_APPLICATION = 'shop.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'shop_db',
-        'USER': 'shop_user',
-        'PASSWORD': 'shop_password',
-        'HOST': 'localhost',
-        'PORT': '5433',
-        'OPTIONS': {
-            'client_encoding': 'UTF8',  # Явно указываем кодировку
-        },
-    }
+
+      'default': dj_database_url.config(
+        default='postgres://postgres:password@localhost:5432/mydb')
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME': 'shop_db',
+    #     'USER': 'shop_user',
+    #     'PASSWORD': 'shop_password',
+    #     #'HOST': 'localhost',
+    #     'PORT': '5433',
+    #     'OPTIONS': {
+    #         'client_encoding': 'UTF8',  # Явно указываем кодировку
+    #     },
+    #}
 }
 
 
@@ -139,7 +145,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / 'store' / 'static'] 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS =  [os.path.join(BASE_DIR, 'static')]
+
+
+# Медиа
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -152,11 +165,11 @@ REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'rest_framework.views.exception_handler',
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',  # JWT
-        'rest_framework.authentication.TokenAuthentication',          # Обычные токены (опционально)
+        'rest_framework.authentication.TokenAuthentication', # Обычные токены (опционально)
     ),
     'DEFAULT_PERMISSION_CLASSES': [
     'rest_framework.permissions.IsAuthenticatedOrReadOnly',
-    ],
+    ]
 }
 
 SIMPLE_JWT = {

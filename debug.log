@@ -1102,3 +1102,2118 @@ ValueError: The view store.views.view didn't return an HttpResponse object. It r
 "GET /cart/ HTTP/1.1" 200 3016
 "GET /api/products/ HTTP/1.1" 200 361
 "GET /products/ HTTP/1.1" 200 5421
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2049
+"GET /api/products/ HTTP/1.1" 200 360
+"GET /products/ HTTP/1.1" 200 5046
+"GET /login/ HTTP/1.1" 200 697
+"POST /api/auth/login/ HTTP/1.1" 200 483
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 2403
+"GET /api/products/ HTTP/1.1" 200 360
+"GET /products/ HTTP/1.1" 200 5420
+"GET /api/carts/ HTTP/1.1" 200 2
+"GET /cart/ HTTP/1.1" 200 3016
+"GET /api/products/ HTTP/1.1" 200 360
+"GET /products/ HTTP/1.1" 200 5420
+"GET /api/carts/ HTTP/1.1" 200 2
+"POST /api/cart-items/ HTTP/1.1" 201 34
+"POST /cart/ HTTP/1.1" 200 21
+"GET /api/carts/ HTTP/1.1" 200 85
+"POST /api/cart-items/ HTTP/1.1" 201 34
+"POST /cart/ HTTP/1.1" 200 21
+"GET /api/carts/ HTTP/1.1" 200 120
+"GET /cart/ HTTP/1.1" 200 4283
+"GET /profile/ HTTP/1.1" 200 7927
+"GET /static/store/images/profile-avatar.jpg HTTP/1.1" 404 1953
+"GET /api/products/ HTTP/1.1" 200 360
+"GET /products/ HTTP/1.1" 200 5420
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2403
+"GET /api/products/ HTTP/1.1" 200 360
+"GET /products/ HTTP/1.1" 200 5420
+"GET /api/carts/ HTTP/1.1" 200 120
+"POST /api/cart-items/ HTTP/1.1" 201 34
+"POST /cart/ HTTP/1.1" 200 21
+"GET /api/carts/ HTTP/1.1" 200 155
+"GET /cart/ HTTP/1.1" 200 4687
+"DELETE /api/cart-items/26/ HTTP/1.1" 204 0
+"DELETE /cart/ HTTP/1.1" 200 21
+"GET /api/carts/ HTTP/1.1" 200 120
+"GET /cart/ HTTP/1.1" 200 4283
+"DELETE /api/cart-items/27/ HTTP/1.1" 204 0
+"DELETE /cart/ HTTP/1.1" 200 21
+"GET /api/carts/ HTTP/1.1" 200 85
+"GET /cart/ HTTP/1.1" 200 3879
+"DELETE /api/cart-items/28/ HTTP/1.1" 204 0
+"DELETE /cart/ HTTP/1.1" 200 21
+"GET /api/carts/ HTTP/1.1" 200 46
+"GET /cart/ HTTP/1.1" 200 3016
+"GET /api/products/ HTTP/1.1" 200 360
+"GET /products/ HTTP/1.1" 200 5420
+"GET /api/carts/ HTTP/1.1" 200 46
+"POST /api/cart-items/ HTTP/1.1" 201 34
+"POST /cart/ HTTP/1.1" 200 21
+"GET /api/carts/ HTTP/1.1" 200 85
+"GET /cart/ HTTP/1.1" 200 3879
+"GET /profile/ HTTP/1.1" 200 7927
+"GET /static/store/images/profile-avatar.jpg HTTP/1.1" 404 1953
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2403
+"GET /api/products/ HTTP/1.1" 200 360
+"GET /products/ HTTP/1.1" 200 5420
+"POST /api/auth/logout/ HTTP/1.1" 205 31
+"POST /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 2388
+"GET /login/ HTTP/1.1" 200 697
+"POST /api/auth/login/ HTTP/1.1" 200 483
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 2403
+"GET /api/products/ HTTP/1.1" 200 360
+"GET /products/ HTTP/1.1" 200 5420
+"GET /api/carts/ HTTP/1.1" 200 260
+"GET /cart/ HTTP/1.1" 200 5899
+"GET /api/products/ HTTP/1.1" 200 360
+"GET /products/ HTTP/1.1" 200 5420
+"GET /api/carts/ HTTP/1.1" 200 260
+Bad Request: /api/cart-items/
+"POST /api/cart-items/ HTTP/1.1" 400 68
+"POST /cart/ HTTP/1.1" 200 19
+"GET /api/carts/ HTTP/1.1" 200 296
+"GET /cart/ HTTP/1.1" 200 6304
+"GET /api/products/ HTTP/1.1" 200 360
+"GET /products/ HTTP/1.1" 200 5420
+"GET /api/carts/ HTTP/1.1" 200 296
+Bad Request: /api/cart-items/
+"POST /api/cart-items/ HTTP/1.1" 400 68
+"POST /cart/ HTTP/1.1" 200 19
+"GET /api/carts/ HTTP/1.1" 200 331
+"GET /cart/ HTTP/1.1" 200 6708
+"POST /api/auth/login/ HTTP/1.1" 200 483
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2049
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 5151
+"GET /api/products/ HTTP/1.1" 200 360
+"GET /products/ HTTP/1.1" 200 5046
+"GET /login/ HTTP/1.1" 200 697
+"GET /register/ HTTP/1.1" 200 6105
+"POST /api/auth/register/ HTTP/1.1" 201 96
+"POST /register/ HTTP/1.1" 200 6720
+"GET /cart/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 697
+"POST /api/auth/login/ HTTP/1.1" 200 483
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 2403
+"GET /profile/ HTTP/1.1" 200 7905
+"GET /static/store/images/profile-avatar.jpg HTTP/1.1" 404 1953
+"GET /api/products/ HTTP/1.1" 200 360
+"GET /products/ HTTP/1.1" 200 5420
+"GET /api/carts/ HTTP/1.1" 200 2
+"POST /api/cart-items/ HTTP/1.1" 201 34
+"POST /cart/ HTTP/1.1" 200 21
+"GET /api/carts/ HTTP/1.1" 200 84
+"GET /api/carts/ HTTP/1.1" 200 84
+"POST /api/cart-items/ HTTP/1.1" 201 34
+"POST /cart/ HTTP/1.1" 200 21
+"POST /api/cart-items/ HTTP/1.1" 201 34
+"POST /cart/ HTTP/1.1" 200 21
+"GET /api/carts/ HTTP/1.1" 200 155
+Bad Request: /api/cart-items/
+"POST /api/cart-items/ HTTP/1.1" 400 68
+"POST /cart/ HTTP/1.1" 200 19
+"GET /api/carts/ HTTP/1.1" 200 190
+"GET /cart/ HTTP/1.1" 200 5091
+"DELETE /api/cart-items/32/ HTTP/1.1" 204 0
+"DELETE /cart/ HTTP/1.1" 200 21
+"GET /api/carts/ HTTP/1.1" 200 155
+"GET /cart/ HTTP/1.1" 200 4687
+"DELETE /api/cart-items/33/ HTTP/1.1" 204 0
+"DELETE /cart/ HTTP/1.1" 200 21
+"DELETE /api/cart-items/35/ HTTP/1.1" 204 0
+"DELETE /cart/ HTTP/1.1" 200 21
+"GET /api/carts/ HTTP/1.1" 200 84
+"GET /cart/ HTTP/1.1" 200 3878
+"DELETE /api/cart-items/34/ HTTP/1.1" 204 0
+"DELETE /cart/ HTTP/1.1" 200 21
+"GET /api/carts/ HTTP/1.1" 200 46
+"GET /cart/ HTTP/1.1" 200 3016
+"GET /profile/ HTTP/1.1" 200 7905
+"GET /static/store/images/profile-avatar.jpg HTTP/1.1" 404 1953
+"GET /api/products/ HTTP/1.1" 200 360
+"GET /products/ HTTP/1.1" 200 5420
+"GET /api/carts/ HTTP/1.1" 200 46
+"POST /api/cart-items/ HTTP/1.1" 201 34
+"POST /cart/ HTTP/1.1" 200 21
+"GET /api/carts/ HTTP/1.1" 200 85
+"POST /api/cart-items/ HTTP/1.1" 201 34
+"POST /cart/ HTTP/1.1" 200 21
+"GET /api/carts/ HTTP/1.1" 200 120
+"GET /cart/ HTTP/1.1" 200 4283
+"GET / HTTP/1.1" 200 2403
+"GET /api/products/ HTTP/1.1" 200 360
+"GET /products/ HTTP/1.1" 200 5420
+"GET /api/products/ HTTP/1.1" 200 360
+"GET /products/ HTTP/1.1" 200 5420
+"GET /api/carts/ HTTP/1.1" 200 120
+Bad Request: /api/cart-items/
+"POST /api/cart-items/ HTTP/1.1" 400 68
+"POST /cart/ HTTP/1.1" 200 19
+"GET /api/carts/ HTTP/1.1" 200 155
+"POST /api/cart-items/ HTTP/1.1" 201 34
+"POST /cart/ HTTP/1.1" 200 21
+"GET /api/carts/ HTTP/1.1" 200 190
+"GET /cart/ HTTP/1.1" 200 5091
+"GET /api/products/ HTTP/1.1" 200 360
+"GET /products/ HTTP/1.1" 200 5420
+"GET /api/carts/ HTTP/1.1" 200 190
+"POST /api/cart-items/ HTTP/1.1" 201 34
+"POST /cart/ HTTP/1.1" 200 21
+"GET /api/carts/ HTTP/1.1" 200 225
+Bad Request: /api/cart-items/
+"POST /api/cart-items/ HTTP/1.1" 400 68
+"POST /cart/ HTTP/1.1" 200 19
+"GET /api/carts/ HTTP/1.1" 200 260
+"GET /cart/ HTTP/1.1" 200 5899
+"GET / HTTP/1.1" 200 2403
+"GET /api/products/ HTTP/1.1" 200 360
+"GET /products/ HTTP/1.1" 200 5420
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2049
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 5151
+"GET /api/products/ HTTP/1.1" 200 360
+"GET /products/ HTTP/1.1" 200 5046
+"GET /login/ HTTP/1.1" 200 697
+"POST /api/auth/login/ HTTP/1.1" 200 483
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 2403
+"GET /api/carts/ HTTP/1.1" 200 85
+"GET /cart/ HTTP/1.1" 200 3879
+"GET /api/products/ HTTP/1.1" 200 360
+"GET /products/ HTTP/1.1" 200 5420
+"GET /api/carts/ HTTP/1.1" 200 85
+"POST /api/cart-items/ HTTP/1.1" 201 34
+"POST /cart/ HTTP/1.1" 200 21
+"GET /api/carts/ HTTP/1.1" 200 120
+"GET /cart/ HTTP/1.1" 200 4283
+"GET /api/carts/ HTTP/1.1" 200 120
+"GET /cart/ HTTP/1.1" 200 4283
+"GET /api/products/ HTTP/1.1" 200 360
+"GET /products/ HTTP/1.1" 200 5420
+"GET /api/carts/ HTTP/1.1" 200 120
+"GET /cart/ HTTP/1.1" 200 4283
+"GET /api/products/ HTTP/1.1" 200 360
+"GET /products/ HTTP/1.1" 200 5420
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 5151
+"GET /api/products/ HTTP/1.1" 200 360
+"GET /products/ HTTP/1.1" 200 5420
+"GET /api/products/ HTTP/1.1" 200 360
+"GET /products/ HTTP/1.1" 200 5420
+"GET /api/products/ HTTP/1.1" 200 360
+"GET /products/ HTTP/1.1" 200 5420
+"GET /api/carts/ HTTP/1.1" 200 260
+"GET /cart/ HTTP/1.1" 200 5899
+"GET /api/carts/ HTTP/1.1" 200 260
+"GET /cart/ HTTP/1.1" 200 5899
+Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 187, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 22, in _wrapper_view
+    if test_func(request.user):
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 51, in <lambda>
+    lambda u: u.is_authenticated,
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 191, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 60, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 53, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 192, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 42, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "C:\mysite\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 187, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\middleware.py", line 48, in process_response
+    if request.session.get_expire_at_browser_close():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 285, in get_expire_at_browser_close
+    if (expiry := self.get("_session_expiry")) is None:
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 68, in get
+    return self._session.get(key, default)
+           ^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 192, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 42, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "C:\mysite\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+"GET /cart/ HTTP/1.1" 500 205865
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 187, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\shop\store\views.py", line 22, in index
+    return render(request, 'store/index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\defaulttags.py", line 314, in render
+    match = condition.eval(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\defaulttags.py", line 877, in eval
+    return self.value.resolve(context, ignore_failures=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 191, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 60, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 53, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 192, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 42, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "C:\mysite\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 187, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\shop\store\views.py", line 22, in index
+    return render(request, 'store/index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\defaulttags.py", line 314, in render
+    match = condition.eval(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\defaulttags.py", line 877, in eval
+    return self.value.resolve(context, ignore_failures=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 191, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 60, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 53, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 192, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 42, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "C:\mysite\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 187, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\shop\store\views.py", line 22, in index
+    return render(request, 'store/index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\defaulttags.py", line 314, in render
+    match = condition.eval(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\defaulttags.py", line 877, in eval
+    return self.value.resolve(context, ignore_failures=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 191, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 60, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 53, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 192, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 42, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "C:\mysite\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 187, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\shop\store\views.py", line 22, in index
+    return render(request, 'store/index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\defaulttags.py", line 314, in render
+    match = condition.eval(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\defaulttags.py", line 877, in eval
+    return self.value.resolve(context, ignore_failures=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 191, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 60, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 53, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 192, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 42, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "C:\mysite\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 187, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\shop\store\views.py", line 22, in index
+    return render(request, 'store/index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\defaulttags.py", line 314, in render
+    match = condition.eval(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\defaulttags.py", line 877, in eval
+    return self.value.resolve(context, ignore_failures=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\template\base.py", line 880, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 191, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 60, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 53, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 192, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 42, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "C:\mysite\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+Internal Server Error: /admin
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 187, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\middleware.py", line 48, in process_response
+    if request.session.get_expire_at_browser_close():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 285, in get_expire_at_browser_close
+    if (expiry := self.get("_session_expiry")) is None:
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 68, in get
+    return self._session.get(key, default)
+           ^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 192, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 42, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "C:\mysite\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+"GET /admin HTTP/1.1" 500 205597
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 187, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\middleware.py", line 48, in process_response
+    if request.session.get_expire_at_browser_close():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 285, in get_expire_at_browser_close
+    if (expiry := self.get("_session_expiry")) is None:
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 68, in get
+    return self._session.get(key, default)
+           ^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 192, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 42, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "C:\mysite\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+"GET / HTTP/1.1" 500 205681
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 187, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\middleware.py", line 48, in process_response
+    if request.session.get_expire_at_browser_close():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 285, in get_expire_at_browser_close
+    if (expiry := self.get("_session_expiry")) is None:
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 68, in get
+    return self._session.get(key, default)
+           ^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 192, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 42, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "C:\mysite\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+"GET / HTTP/1.1" 500 205681
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 187, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\middleware.py", line 48, in process_response
+    if request.session.get_expire_at_browser_close():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 285, in get_expire_at_browser_close
+    if (expiry := self.get("_session_expiry")) is None:
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 68, in get
+    return self._session.get(key, default)
+           ^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 192, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 42, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "C:\mysite\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+"GET / HTTP/1.1" 500 205681
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 187, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\middleware.py", line 48, in process_response
+    if request.session.get_expire_at_browser_close():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 285, in get_expire_at_browser_close
+    if (expiry := self.get("_session_expiry")) is None:
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 68, in get
+    return self._session.get(key, default)
+           ^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 192, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 42, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "C:\mysite\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+"GET / HTTP/1.1" 500 205681
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 187, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\mysite\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\middleware.py", line 48, in process_response
+    if request.session.get_expire_at_browser_close():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 285, in get_expire_at_browser_close
+    if (expiry := self.get("_session_expiry")) is None:
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 68, in get
+    return self._session.get(key, default)
+           ^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 192, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 42, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 330, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 306, in _cursor
+    self.ensure_connection()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 288, in ensure_connection
+    with self.wrap_database_errors:
+  File "C:\mysite\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 289, in ensure_connection
+    self.connect()
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\base\base.py", line 270, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\django\db\backends\postgresql\base.py", line 275, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\mysite\venv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+"GET / HTTP/1.1" 500 205681
+Not Found: /admin
+"GET /admin HTTP/1.1" 404 5127
+Not Found: /store
+"GET /store HTTP/1.1" 404 5125
+"GET /api/carts/ HTTP/1.1" 200 260
+"GET /cart/ HTTP/1.1" 200 5899
+"GET / HTTP/1.1" 200 2403
+Watching for file changes with StatReloader
+"GET /cart/ HTTP/1.1" 302 0
+"GET /login/?next=/cart/ HTTP/1.1" 200 697
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 6455
+Unauthorized: /api/auth/login/
+"POST /api/auth/login/ HTTP/1.1" 401 63
+"POST /login/?next=/cart/ HTTP/1.1" 200 788
+"GET / HTTP/1.1" 200 2049
+"GET /api/products/ HTTP/1.1" 200 2
+"GET /products/ HTTP/1.1" 200 2611
+"GET /cart/ HTTP/1.1" 302 0
+"GET /login/?next=/cart/ HTTP/1.1" 200 697
+"GET /register/ HTTP/1.1" 200 6105
+"POST /api/auth/register/ HTTP/1.1" 201 96
+"POST /register/ HTTP/1.1" 200 6720
+"GET /profile/ HTTP/1.1" 200 7905
+"GET /static/store/images/profile-avatar.jpg HTTP/1.1" 404 2020
+"GET /cart/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 697
+"GET / HTTP/1.1" 200 2403
+"GET /api/products/ HTTP/1.1" 200 2
+"GET /products/ HTTP/1.1" 200 2965
+"GET / HTTP/1.1" 200 2403
+"GET /api/products/ HTTP/1.1" 200 2
+"GET /products/ HTTP/1.1" 200 2965
+"GET /cart/ HTTP/1.1" 302 0
+"GET /login/ HTTP/1.1" 200 697
+"GET / HTTP/1.1" 200 2403
+"GET /profile/ HTTP/1.1" 200 7905
+"GET /static/store/images/profile-avatar.jpg HTTP/1.1" 404 2020
+"POST /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 2388
+"GET /login/ HTTP/1.1" 200 697
+"GET /register/ HTTP/1.1" 200 6105
+Bad Request: /api/auth/register/
+"POST /api/auth/register/ HTTP/1.1" 400 58
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view store.views.view didn't return an HttpResponse object. It returned None instead.
+"POST /register/ HTTP/1.1" 500 62056
+"GET /api/products/ HTTP/1.1" 200 2
+"GET /products/ HTTP/1.1" 200 2611
+"GET /cart/ HTTP/1.1" 302 0
+"GET /login/?next=/cart/ HTTP/1.1" 200 697
+Unauthorized: /api/auth/login/
+"POST /api/auth/login/ HTTP/1.1" 401 63
+"POST /login/?next=/cart/ HTTP/1.1" 200 788
+Unauthorized: /api/auth/login/
+"POST /api/auth/login/ HTTP/1.1" 401 63
+"POST /login/?next=/cart/ HTTP/1.1" 200 788
+"GET /register/ HTTP/1.1" 200 6105
+Bad Request: /api/auth/register/
+"POST /api/auth/register/ HTTP/1.1" 400 58
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view store.views.view didn't return an HttpResponse object. It returned None instead.
+"POST /register/ HTTP/1.1" 500 62056
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
