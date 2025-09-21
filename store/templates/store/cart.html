@@ -20,8 +20,8 @@
         <tbody>
             {% for item in cart.items %}
             <tr>
-                <td>{{ item.product.name|default:"Неизвестный товар" }}</td>
-                <td>{{ item.product.price }} руб.</td>
+                <td>{{ item.product_details.name|default:"Неизвестный товар" }}</td>
+                <td>{{ item.product_details.price }} руб.</td>
                 <td>{{ item.quantity }}</td>
                 <td>{{ item.total_price|default:0 }} руб.</td>
                 <td>
