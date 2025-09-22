@@ -16,7 +16,7 @@ User = get_user_model()
 
 class UserRegisterSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
-    password2 = serializers.CharField(write_only=True)  # ← ДОБАВЬТЕ ЭТУ СТРОКУ!
+    password2 = serializers.CharField(write_only=True)
 
     class Meta:
         model = User
@@ -28,27 +28,13 @@ class UserRegisterSerializer(serializers.ModelSerializer):
         return data
 
     def create(self, validated_data):
-        validated_data.pop('password2')  # Удаляем перед созданием пользователя
+        validated_data.pop('password2')
         user = User.objects.create_user(**validated_data)
         return user
-# User = get_user_model()
 
-# class UserRegisterSerializer(serializers.ModelSerializer):
-#     password = serializers.CharField(write_only=True) #говорит о том, что пароль не возвращается в API
-# # преобразует данные регистрации в объект User
-#     class Meta:
-#         model = User
-#         fields = ('id', 'username', 'password', 'email')
 
-# #переопределяем метод криэйт, используем криэйт юзер обеспечивая хеширование паролей и правильно обрабатывает пустые имейлы
-#     def create(self, validated_data):
-#         user = User.objects.create_user(
-#             username=validated_data['username'],
-#             email=validated_data.get('email', ''),
-#             password=validated_data['password']
-#         )
-#         return user
-    
+
+
 #наследует от сериалайзер
 #валидирует данные при смене пароля
 #проверяет начличие старого пароля, потом проверяет пароль с помощью встроенного валидатора джанго
@@ -68,13 +54,12 @@ class ProductSerializer(serializers.ModelSerializer):
         
 #работает с элементами корзины
 class CartItemSerializer(serializers.ModelSerializer):
-    product = serializers.PrimaryKeyRelatedField(queryset=Product.objects.all(), required=True)  # ← ИСПРАВЛЕНО!
-    # Если нужно возвращать данные товара при чтении — добавьте отдельное поле
-    product_details = ProductSerializer(source='product', read_only=True)
+    product = serializers.PrimaryKeyRelatedField(queryset=Product.objects.all(), required=True) #для записи, обновления
+    product_details = ProductSerializer(source='product', read_only=True) #для чтения, возвращает полные данные товара
 
     class Meta:
         model = CartItem
-        fields = ['id', 'product', 'product_details', 'quantity']  # ← ДОБАВИЛИ product_details
+        fields = ['id', 'product', 'product_details', 'quantity']
 
     def validate_quantity(self, value):
         if value <= 0:
@@ -84,11 +69,12 @@ class CartItemSerializer(serializers.ModelSerializer):
 #список элементов корзины через CartItemSerializer
 class CartSerializer(serializers.ModelSerializer):
     items = CartItemSerializer(many=True, read_only=True)
-    total_price = serializers.SerializerMethodField()
+    total_price = serializers.SerializerMethodField() #поле, значение которого считается через get_total_price
 
     class Meta:
         model = Cart
-        fields = ['id', 'user', 'items', 'total_price']
+        fields = ['id', 'user', 'items', 'total_price', 'is_active', 'created_at']
 
     def get_total_price(self, obj):
-        return sum(item.product.price * item.quantity for item in obj.items.all())
+        return obj.get_total_price()
+        # return sum(item.product.price * item.quantity for item in obj.items.all())

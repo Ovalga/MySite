@@ -14,7 +14,7 @@ class User(AbstractUser):
         verbose_name='groups',
         blank=True,
         help_text='The groups this user belongs to...',
-        related_name="store_user_groups",  # Уникальное имя
+        related_name="store_user_groups",  # Уникальное имя, для доступа пользователя из группы
         related_query_name="user",
     )
     # переопределение для поля user_permissions для прав доступа с моделью Permission
@@ -24,7 +24,7 @@ class User(AbstractUser):
         blank=True,
         help_text='Specific permissions for this user...',
         related_name="store_user_permissions",  # Уникальное имя
-        related_query_name="user",
+        related_query_name="user", # имя для запросов
     )
 
 # модель товара
@@ -46,9 +46,13 @@ class Cart(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     # дата создания корзины, автомат устанавл при создании
     created_at = models.DateTimeField(auto_now_add=True)
+    is_active = models.BooleanField(default=True)
     # возвращает строку вида "Cart #1 - username"
     def __str__(self):
         return f"Cart #{self.id} - {self.user.username}"
+    
+    def get_total_price(self):
+        return sum(item.total_price() for item in self.items.all())
 
 # модель элемента корзины
 class CartItem(models.Model):

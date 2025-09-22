@@ -9,6 +9,7 @@ from django.conf import settings
 from rest_framework import status
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+from rest_framework_simplejwt.tokens import RefreshToken
 import logging
 from django.views.decorators.http import require_POST
 from django.views.decorators.csrf import csrf_exempt
@@ -70,17 +71,21 @@ def cart(request):
             'Content-Type': 'application/json'
         }
 
-        # Получаем корзину ТЕКУЩЕГО пользователя
+        # ИСПРАВЛЕННЫЙ КОД: Получаем АКТИВНУЮ корзину
         cart_url = f"{settings.BASE_URL.rstrip('/')}/{settings.API_BASE_URL.lstrip('/')}carts/"
         cart_response = requests.get(cart_url, headers=headers)
-        cart_id = cart_response.json()[0]['id'] if cart_response.json() else None
-
+        
+        cart_id = None
         if cart_response.status_code == 200 and cart_response.json():
-            cart_id = cart_response.json()[0]['id']
-        else:
+            # Ищем активную корзину
+            carts = cart_response.json()
+            active_cart = next((cart for cart in carts if cart.get('is_active', True)), None)
+            cart_id = active_cart['id'] if active_cart else None
+
+        if not cart_id:
             # Создаём новую корзину
             create_cart_url = f"{settings.BASE_URL.rstrip('/')}/{settings.API_BASE_URL.lstrip('/')}carts/"
-            create_response = requests.post(create_cart_url, json={}, headers= headers)
+            create_response = requests.post(create_cart_url, json={}, headers=headers)
             if create_response.status_code == 201:
                 cart_id = create_response.json()['id']
             else:
@@ -110,19 +115,14 @@ def cart(request):
             'Content-Type': 'application/json'
         }
         
-        # response = requests.delete(f"{API_BASE_URL}cart-items/{item_id}/", headers=headers)
-        # return JsonResponse({'status': 'success' if response.status_code == 204 else 'error'})
-    
-        # АБСОЛЮТНЫЙ URL
         item_url = f"{settings.BASE_URL.rstrip('/')}/{API_BASE_URL.lstrip('/')}cart-items/{item_id}/"
         response = requests.delete(item_url, headers=headers)
         return JsonResponse({'status': 'success' if response.status_code == 204 else 'error'})
 
     else:
-        #GET запрос - отображение корзины, ее содержимое
+        # GET запрос - отображение корзины
         access_token = request.session.get('access_token', '')
         
-        # Если токен отсутствует, перенаправляем на вход
         if not access_token:
             return redirect('login')
         
@@ -136,7 +136,6 @@ def cart(request):
         try:
             response = requests.get(cart_url, headers=headers)
             
-            # Если получили 401 - токен устарел, пробуем обновить
             if response.status_code == 401:
                 refresh_token = request.session.get('refresh_token', '')
                 if refresh_token:
@@ -149,9 +148,10 @@ def cart(request):
             
             if response.status_code == 200:
                 cart_data = response.json()
-                if cart_data:
-                    cart = cart_data[0]
-                    
+                # Ищем активную корзину
+                active_cart = next((cart for cart in cart_data if cart.get('is_active', True)), None)
+                if active_cart:
+                    cart = active_cart
                     # Вычисляем сумму для каждого элемента
                     for item in cart['items']:
                         try:
@@ -161,14 +161,15 @@ def cart(request):
                         except (TypeError, ValueError, KeyError):
                             item['total_price'] = 0
                 else:
-                    cart = None
+                    cart = {'items': []}  # Если активной корзины нет
             else:
-                cart = None
+                cart = {'items': []}
         except Exception as e:
             print(f"Error fetching cart: {e}")
-            cart = None
+            cart = {'items': []}
         
         return render(request, 'store/cart.html', {'cart': cart})
+
 
 # функция для обновления токена
 def refresh_jwt_token(refresh_token):
@@ -252,6 +253,19 @@ class RegisterView(View):
     
 class LoginView(View):
     template_name = 'store/login.html'
+
+    def form_valid(self, form):
+        response = super().form_valid(form)
+        
+        # Получаем JWT токен для пользователя
+        user = form.get_user()
+        refresh = RefreshToken.for_user(user)
+        
+        # Сохраняем токен в сессии
+        self.request.session['access_token'] = str(refresh.access_token)
+        self.request.session['refresh_token'] = str(refresh)
+        
+        return response
     
     #отображает форму входа
     def get(self, request):
@@ -296,6 +310,17 @@ def logout_view(request):
                 'Authorization': f'Bearer {request.session["access_token"]}',
                 'Content-Type': 'application/json'
             }
+            # Деактивируем корзину при выходе
+            cart_url = f"{settings.BASE_URL.rstrip('/')}/{API_BASE_URL.lstrip('/')}carts/"
+            cart_response = requests.get(cart_url, headers=headers)
+            if cart_response.status_code == 200:
+                carts = cart_response.json()
+                for cart in carts:
+                    if cart.get('is_active', False):
+                        update_url = f"{settings.BASE_URL.rstrip('/')}/{API_BASE_URL.lstrip('/')}carts/{cart['id']}/"
+                        requests.patch(update_url, json={'is_active': False}, headers=headers)
+
+
             data = {'refresh': request.session.get('refresh_token', '')}
             logout_url = f"{settings.BASE_URL.rstrip('/')}/api/auth/logout/"
             response = requests.post(logout_url, json=data, headers=headers)
